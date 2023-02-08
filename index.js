@@ -3,7 +3,24 @@ const express = require("express");
 const app = express();
 
 app.get("/", function (req, res) {
-  res.send("Hello World");
+  res.json([
+    {
+        "id": 0,
+        "name": "shoeb"
+    },
+    {
+        "id": 1,
+        "name": "reba"
+    },
+    {
+        "id": 2,
+        "name": "abedin"
+    },
+    {
+        "id": 3,
+        "name": "akhter"
+    },
+  ])
 });
 
 app.listen(3000, function () {
