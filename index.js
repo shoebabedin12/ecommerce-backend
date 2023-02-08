@@ -23,6 +23,12 @@ app.get("/", function (req, res) {
   ])
 });
 
+app.get("/test", function(req, res){
+res.json({
+    "name": "test",
+})
+})
+
 app.listen(3000, function () {
   console.log(chalk.bgGreen("port running on 3000"));
 });
