@@ -1,6 +1,10 @@
 const chalk = require("chalk");
 const express = require("express");
+var cors = require('cors')
 const app = express();
+
+// middlewear
+app.use(cors())
 
 app.get("/", function (req, res) {
   res.json([
