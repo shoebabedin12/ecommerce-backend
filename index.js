@@ -4,6 +4,8 @@ var cors = require('cors')
 const app = express();
 const UsersRouter = require("./routes/UsersRoutes");
 
+const port = process.env.PORT || 5000;
+
 // middlewear
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
@@ -39,6 +41,6 @@ res.json({
 })
 })
 
-app.listen(3000, function () {
-  console.log(chalk.bgGreen("port running on 3000"));
+app.listen(port, function () {
+  console.log(chalk.bgGreen(`Your port is ${port}`));
 });
