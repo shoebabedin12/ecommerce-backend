@@ -1,6 +1,6 @@
 const express = require('express');
 const _ = express.Router();
-const apiRoutes = require('./api')
+const apiRoutes = require('./api/auth');
 
 
 const api = process.env.BASE_URL;
