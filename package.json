@@ -4,7 +4,8 @@
   "description": "ecommarce-backend",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
+    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ecommerce",
@@ -12,6 +13,7 @@
   "dependencies": {
     "chalk": "^4.0.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2"
   }
 }
